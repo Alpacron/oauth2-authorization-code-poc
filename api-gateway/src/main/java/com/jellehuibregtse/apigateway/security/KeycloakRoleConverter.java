@@ -1,4 +1,4 @@
-package com.jellehuibregtse.resourceserviceone.security;
+package com.jellehuibregtse.apigateway.security;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.security.core.GrantedAuthority;

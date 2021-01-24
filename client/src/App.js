@@ -141,7 +141,7 @@ export default function App() {
                     request.setRequestHeader("Authorization", "Bearer " + accessToken)
                 },
                 type: "POST",
-                url: "http://localhost:8762/api/resource-service-one/resource/status/check",
+                url: "http://localhost:8762/api/resource-service-one/message",
                 data: message,
                 success: () => {setWebsocketData("send message")},
                 data_type: "json"

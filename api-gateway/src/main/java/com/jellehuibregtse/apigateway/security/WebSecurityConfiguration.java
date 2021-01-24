@@ -1,4 +1,4 @@
-package com.jellehuibregtse.resourceserviceone.security;
+package com.jellehuibregtse.apigateway.security;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -16,7 +16,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
             .antMatchers("/actuator/**")
             .permitAll()
-            .antMatchers(HttpMethod.GET, "/**")
+            .anyRequest()
             .authenticated()
             .and()
             .oauth2ResourceServer()

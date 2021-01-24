@@ -1,13 +1,6 @@
 server:
   port: 0
 
-spring:
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8080/auth/realms/poc
-
 eureka:
   client:
     service-url:
